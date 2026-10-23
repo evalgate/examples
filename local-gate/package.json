@@ -1,0 +1,12 @@
+{
+	"name": "evalgate-local-gate-example",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Provider-free refund boundary fixture for the five-minute gate",
+	"scripts": {
+		"test": "node --test policy.test.cjs"
+	},
+	"devDependencies": {
+		"@evalgate/sdk": "3.15.0"
+	}
+}

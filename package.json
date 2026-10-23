@@ -1,0 +1,7 @@
+{
+  "name": "evalgate-examples",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "verify": "node scripts/verify-local-gate.mjs" },
+  "engines": { "node": "24.x" }
+}
