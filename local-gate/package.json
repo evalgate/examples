@@ -7,6 +7,6 @@
 		"test": "node --test policy.test.cjs"
 	},
 	"devDependencies": {
-		"@evalgate/sdk": "3.15.0"
+		"@evalgate/sdk": "3.18.2"
 	}
 }

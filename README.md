@@ -8,7 +8,7 @@ review two deterministic cases, accept a passing baseline, break the day-30
 boundary, see exit **2**, and restore it. No account or provider credential is
 needed. Installing the pinned SDK requires internet access.
 
-The example pins the published SDK **3.15.0** and uses Node **24**. It makes no
+The example pins the published SDK **3.18.2** and uses Node **24**. It makes no
 model calls. A passing gate proves only its configured checks.
 
 The [verification workflow](.github/workflows/local-gate.yml) runs the entire

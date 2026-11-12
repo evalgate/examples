@@ -26,7 +26,7 @@ try {
   run("install", process.execPath, [process.env.npm_execpath, "ci", "--ignore-scripts", "--no-audit", "--no-fund"]);
   const sdkRoot = path.join(project, "node_modules/@evalgate/sdk");
   const sdk = JSON.parse(fs.readFileSync(path.join(sdkRoot, "package.json"), "utf8"));
-  assert.equal(sdk.version, "3.15.0");
+  assert.equal(sdk.version, "3.18.2");
   const cli = path.join(sdkRoot, sdk.bin.evalgate);
   const attempts = path.join(evidence, "network-attempts.txt");
   const loaded = path.join(evidence, "network-guard-loaded.txt");
@@ -59,7 +59,7 @@ try {
   fs.writeFileSync(path.join(evidence, "summary.json"), JSON.stringify({ status: "passed", node: process.version, sdk: sdk.version, commands: records, networkAttempts: 0, journey: "preview/apply/review/baseline/pass/block/restore" }, null, 2));
   assert.ok(path.resolve(project).startsWith(path.join(os.tmpdir(), "evalgate public example ")));
   fs.rmSync(project, { recursive: true });
-  console.log("Published SDK 3.15.0: credential-free pass/block/pass 0/2/0; no network attempts after install.");
+  console.log("Published SDK 3.18.2: credential-free pass/block/pass 0/2/0; no network attempts after install.");
 } catch (error) {
   fs.writeFileSync(path.join(evidence, "summary.json"), JSON.stringify({ status: "failed", project, commands: records, error: String(error) }, null, 2));
   throw error;
